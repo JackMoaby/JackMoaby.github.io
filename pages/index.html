@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon_main.ico">
+
+    <title>[ Jack Moaby ]</title>
+
+    <link rel="stylesheet" href="../css/op-index.css">
+    
+    <script src="../scripts/optomised-particle-sim.js" defer></script>
+    <script src="../scripts/portfolio.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <section class="particle-container">
+            <canvas id="particles-canvas"></canvas>
+            <div id="left" class="scroll-down">SCROLL DOWN <span class="material-symbols-outlined">arrow_downward</span></div>
+            <div id="right" class="scroll-down">SCROLL DOWN <span class="material-symbols-outlined">arrow_downward</span></div>
+            <button type="button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'}, true);" id="top-right" class="contact-me">CONTACT ME</button>
+            <div class="introducer">
+                <div class="introducer-options-container">
+                    <div class="introducer-title">HELLO.txt</div>
+                    <div class="introducer-options">
+                        <span class="material-symbols-outlined">
+                            minimize
+                        </span>
+                        <span class="material-symbols-outlined">
+                            check_box_outline_blank
+                        </span>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </div>
+                <div class="introducer-main">
+                    <span>H</span><span>i</span><span>,</span><br>
+                    <span>I</span><span>'</span><span>m</span><span class="space"></span><span>J</span><span>a</span><span>c</span><span>k</span><br>
+                    <span style="font-size: 1rem!important;">Python / HTML</span><span class="space"></span><span style="font-size: 1rem!important;"  >dev</span><br>
+                    <span>‎</span>
+                </div>
+                <button type="button" onclick="init()" class="introducer-reset-sim">RUN <span class="material-symbols-outlined">play_circle</span></button>
+            </div>
+        </section>
+    </header>
+
+    <hr/>
+    
+    <main>
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-introducer">My Works</div>
+            <div class="portfolio-container" id="portfolio-scroll">
+                <!-- Font credit https://gist.github.com/jjmajava/977646457e00be87bb2e {give better credit in final}-->
+                <a href="https://guiseleycc.co.uk/pages/index.html" class="portfolio-module"><img class="portfolio-module-image" alt="Guiseley Cricket Club" src="../images/PastIcons/GCC.webp"></a>
+                <a href="index.html" class="portfolio-module"><img class="portfolio-module-image" alt="This website" src="../images/PastIcons/WEB.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+                <a class="portfolio-module"><img class="portfolio-module-image" alt="n/a" src="../images/PastIcons/NA.webp"></a>
+            </div>
+        </section>
+
+        <hr/>
+        <section class="default" id="black">
+            <div class="default-title">Professional Experience</div>
+            <div class="default-text">
+                <div class="default-subtitle"><p>[</p> 2023 - 2023 <p>]</p> This website</div>
+                <div class="default-paragraph">
+                    <p> - </p>HTML / CSS / JS <br>
+                    Developed this website learning all about Javascript Canvas (2d & Webgl) and responsive design
+                </div>
+                <div class="default-subtitle"><p>[</p> 2022 - 2023 <p>]</p> Guiseley Cricket Club</div>
+                <div class="default-paragraph">
+                    <p> - </p>HTML / CSS / JS <br>
+                    Developed and begun maintaining a website for the local cricket club. This involved interfacing with API's and learning Javascript HTML and CSS within the first few months as I had no prior experience with the languages
+                </div>
+
+                <div class="default-subtitle"><p>[</p> 2016 - 2017 <p>]</p> Sunny Bank Mills</div>
+                <div class="default-paragraph">
+                    <p> - </p> Media <br>
+                    Volunteered in Sunny Bank Mills Archive, aiding with the collection and creating a promotional video for them which performed well on YouTube
+                </div>
+
+                <!--
+                    <div class="default-subtitle">[ DATES ] Title </div>
+                    <div class="default-paragraph">
+                        ( LANGUAGES )<br>
+                        More info here
+                    </div>
+                -->
+
+            </div>
+        </section>
+        <hr/>
+        <section class="default" id="white">
+            <div class="default-title">Education</div>
+            <div class="default-text">
+                <div class="default-subtitle"><p>[</p> 2022 - 2024 <p>]</p> High School ( A - Level )</div>
+                <div class="default-paragraph">
+                    <p> - </p> Maths <br>
+                    <p> - </p> Further Maths <br>
+                    <p> - </p> Physics
+                </div>
+                <div class="default-subtitle"><p>[</p> 2017 - 2022 <p>]</p> High School ( GCSE )</div>
+                <div class="default-paragraph">
+                    <p> - </p> 6 GCSE's at Grade 9 (including maths, physics and computer science) <br>
+                    <p> - </p> 9 GCSE's at Grade 7 - 9
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section class="default" id="black">
+            <div class="default-title">Other things to note</div>
+            <div class="default-text">
+                <div class="default-subtitle">Tap Dance</div>
+                <div class="default-paragraph">
+                    <p> - </p> Grade 1 - Distinction <br>
+                    <p> - </p> Grade 2 - Distinction <br>
+                    <p> - </p> Grade 3 - Distinction
+                </div>
+                <div class="default-subtitle">Piano</div>
+                <div class="default-paragraph">
+                    <p> - </p> Grade 5 (theory) - Distinction <br>
+                    <p> - </p> Grade 6 - In Progress
+                </div>
+                <div class="default-subtitle">DofE</div>
+                <div class="default-paragraph">
+                    <p> - </p> Litter picking, swim coach, swimming.
+                </div>
+            </div>
+        </section>
+        <hr/>
+
+        <section class="contact" id="white">
+            <div class="contact-mail-to" id="contact">
+                <a href="mailto:jackmoaby@gmail.com">Email Me!</a>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75394.34089928021!2d-1.6059427169591722!3d53.805981999165276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793e4ada64bd99%3A0x51adbafd0213dca9!2sLeeds!5e0!3m2!1sen!2suk!4v1673658619414!5m2!1sen!2suk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>     
+    </main>
+</body>
