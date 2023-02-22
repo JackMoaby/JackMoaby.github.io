@@ -43,8 +43,8 @@ const element = document.getElementById("loading-code-content");
 
 var i = 0;
 function write_loader(){delay = Math.floor(Math.random() * (100 - 50) + 50); setTimeout(function() {element.innerHTML = arr[i]; i++; if (i < arr.length) {write_loader();}}, delay)};
-function fade_out(){setTimeout(() => {document.getElementById("code-window").classList.add("fade-to-black")}, (arr.length * 100) + 750)};
-function load_page(){setTimeout(() => {window.location.replace("./pages/index.html");}, (arr.length * 100 + 1750))};
+function fade_out(){setTimeout(() => {document.getElementById("code-window").classList.add("fade-to-black")}, (arr.length * 50) + 750)};
+function load_page(){setTimeout(() => {window.location.replace("./pages/index.html");}, (arr.length * 50 + 875))};
 
 write_loader();
 fade_out();
