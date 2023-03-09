@@ -1,7 +1,7 @@
 if (window.innerWidth > 800){
-    var simulation_settings = [1500, 5, 0.00008, 0.0012]
+    var simulation_settings = [2000, 5, 0.00008, 0.0012]
 } else {
-    var simulation_settings = [750, 2, 0.00008, 0.0012]
+    var simulation_settings = [1000, 2, 0.00008, 0.0012]
 }
 
 
@@ -18,9 +18,9 @@ particle_canvas.height = window.innerHeight;
 function init(){
     // simulation_settings = [max_particles, dot_size, delta_v, friction]
     if (window.innerWidth > 800){
-        simulation_settings = [1500, 5, 0.00008, 0.0012]
+        simulation_settings = [2000, 5, 0.00008, 0.0012]
     } else {
-        simulation_settings = [750, 2, 0.00008, 0.0012]
+        simulation_settings = [1000, 2, 0.00008, 0.0012]
     }
     
 
