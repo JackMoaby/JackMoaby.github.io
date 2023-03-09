@@ -91,6 +91,17 @@ onmousemove = function(event){
         mouse_location = [event.clientX / particle_canvas.width * 100, event.clientY / particle_canvas.height * 100]
     }
 }
+touchstart = function(event){
+    if ((event.clientY < particle_canvas.height) && (event.clientX < particle_canvas.width)){
+        mouse_location = [event.clientX / particle_canvas.width * 100, event.clientY / particle_canvas.height * 100]
+    }
+}
+touchend = function(event){
+    if ((event.clientY < particle_canvas.height) && (event.clientX < particle_canvas.width)){
+        mouse_location = [event.clientX / particle_canvas.width * 100, event.clientY / particle_canvas.height * 100]
+    }
+}
+
 onscroll = function(event){
     if (window.scrollY < particle_canvas.height){
         if (paused == true){
