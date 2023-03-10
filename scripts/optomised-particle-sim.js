@@ -10,7 +10,6 @@ particle_canvas.height = window.innerHeight;
 
 
 function init(){
-    particles = []
     paused = false
 
     // [max_particles, dot_size, delta_v, friction]
@@ -20,6 +19,7 @@ function init(){
         simulation_settings = [1000, 2, 0.00008, 0.0012]
     }
 
+    particles = []
     for (let i = 0; i < simulation_settings[0]; i++){
         particles.push([Math.random() * 100, Math.random() * 100, 0, 0]);
     }
@@ -31,7 +31,7 @@ function update_particles(){
         for (let i = 0; i < particles.length; i++) {
             particles[i][0] = particles[i][0] * (1 - simulation_settings[3])
             particles[i][1] = particles[i][1] * (1 - simulation_settings[3])
-            var angle = Math.atan(Math.abs(mouse_location[1] - particles[i][1]) / Math.abs(mouse_location[0] - particles[i][0]))
+            let angle = Math.atan(Math.abs(mouse_location[1] - particles[i][1]) / Math.abs(mouse_location[0] - particles[i][0]))
             if (particles[i][0] < mouse_location[0] && particles[i][1] < mouse_location[1]){
                 particles[i][2] += Math.cos(angle) * (180 / Math.PI) * simulation_settings[2];
                 particles[i][3] += Math.sin(angle) * (180 / Math.PI) * simulation_settings[2];
@@ -56,7 +56,7 @@ function update_particles(){
 function frame(){
     if (paused == false) {
         // Clear the canvas
-        //particle_screen.clearRect(0, 0, particle_canvas.width, particle_canvas.height);
+        // particle_screen.clearRect(0, 0, particle_canvas.width, particle_canvas.height);
 
         // Motion blur the canvas
         particle_screen.beginPath();
