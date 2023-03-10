@@ -1,8 +1,7 @@
 var particle_canvas = document.getElementById("particles-canvas");
 var particle_screen = particle_canvas.getContext("2d");
-var particles = []
-var paused = false
-var  simulation_settings
+
+var  simulation_settings, particles, paused
 var mouse_location = [50,50]
 
 
@@ -11,9 +10,8 @@ particle_canvas.height = window.innerHeight;
 
 
 function init(){
-    // FPS TEST
-    
-
+    particles = []
+    paused = false
 
     // [max_particles, dot_size, delta_v, friction]
     if (window.innerWidth > 800){
