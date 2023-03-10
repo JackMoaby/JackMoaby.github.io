@@ -19,6 +19,7 @@ function init(){
         simulation_settings = [1000, 2, 0.00008, 0.0012]
     }
 
+    // Clear particle array on init
     particles = []
     for (let i = 0; i < simulation_settings[0]; i++){
         particles.push([Math.random() * 100, Math.random() * 100, 0, 0]);
