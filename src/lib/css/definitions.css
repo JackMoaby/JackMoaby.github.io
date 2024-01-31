@@ -1,0 +1,24 @@
+:root{
+  /* Pallete */
+  --dark-teal: #144c64;
+  --light-blue: #0ec3c9;
+  --web-orange: #ffb133;
+  --white: #f0f2f4;
+  --muted-black: #262626;
+
+  /* Global Definitions */
+  --border-radius: 12px;
+  --underline-size: 2px;
+
+  /* Colour Definitions */
+  --navbar-logo-text: var(--dark-teal);
+  --navbar-logo-underline: var(--web-orange);
+  --navbar-text: var(--dark-teal);
+  --navbar-hover-background: var(--dark-teal);
+  --navbar-hover-text: var(--white);
+
+  --project-border-colour: var(--muted-black);
+  --project-hover-colour: var(--dark-teal);
+  --project-tag-colour: var(--web-orange);
+  --project-tag-text: var(--muted-black)
+}

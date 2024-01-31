@@ -1,0 +1,28 @@
+section.app{
+  /* Pallete */
+  --dark-teal: #144c64;
+  --light-blue: #0ec3c9;
+  --web-orange: #ffb133;
+  --white: #f0f2f4;
+  --muted-black: #262626;
+  
+  --home-background: var(--white);
+  --home-title-colour: var(--dark-teal);
+  --home-title-underline: var(--web-orange);
+  --home-button-background: var(--dark-teal); 
+  --home-button-colour: var(--white);
+  
+  --board-background-colour: var(--white);
+  --board-fake-eval-colour: var(--dark-teal);
+  --board-fake-eval-text: var(--white);
+  --board-line-colour: var(--muted-black);
+  --board-line-width: 4px;
+  --board-O-colour: var(--web-orange);
+  --board-X-colour: var(--dark-teal);
+  --board-arrow-background: var(--dark-teal);
+  --board-arrow-colour: var(--white);
+  --board-modal-background: var(--dark-teal);
+  --board-modal-button: var(--web-orange);
+  --board-modal-title-colour: var(--white);
+}
+
