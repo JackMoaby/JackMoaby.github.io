@@ -6,7 +6,7 @@
       "name": "Noughts & Crosses Evaluation Bar",
       "desc": "With a fast αβ-search to evaluate positions (in JS)",
       "imag": "./projects/NoughtsAndCrossesEvalBar.png",
-      "href": "/apps/tictactoe",
+      "href": "/apps/naughts-and-crosses",
       "tags": ["2024", "FUNNY"]
     },
   ]

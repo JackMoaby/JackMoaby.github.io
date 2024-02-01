@@ -11,9 +11,9 @@
   $: {
     if (isScreenBig !== prevScreenBig) {
       if (isScreenBig){
-        if (browser) goto("/apps/tictactoe/desktop");
+        if (browser) goto("/apps/naughts-and-crosses/desktop");
       } else {
-        if (browser) goto("/apps/tictactoe/mobile");
+        if (browser) goto("/apps/naughts-and-crosses/mobile");
       }
     }
     prevScreenBig = isScreenBig;
